@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="The Toolbox">
-    <title>What Makes an Enterprise CMS? - The Toolbox</title>
+    <title>Test Delayed Development - The Toolbox</title>
     <meta name="author" content="Paweł Malik">
     
     
@@ -15,16 +15,16 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="Recently I stumbled upon a website advertising an enterprise-grade CMS and Commerce suite written in node.js. I grew my interests in JavaScript after I was forced to implement a module performing the">
+    <meta name="description" content="Test Driven Development is a commonly recognized term and probably the most acclaimed development practice out there. Nowadays, it is near to impossible to find a developer, architect or a project man">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="What Makes an Enterprise CMS?">
-<meta property="og:url" content="http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/index.html">
+<meta property="og:title" content="Test Delayed Development">
+<meta property="og:url" content="http://malpaw.github.io/2016/01/31/test-delayed-development/index.html">
 <meta property="og:site_name" content="The Toolbox">
-<meta property="og:description" content="Recently I stumbled upon a website advertising an enterprise-grade CMS and Commerce suite written in node.js. I grew my interests in JavaScript after I was forced to implement a module performing the">
-<meta property="og:updated_time" content="2016-01-06T16:00:03.769Z">
+<meta property="og:description" content="Test Driven Development is a commonly recognized term and probably the most acclaimed development practice out there. Nowadays, it is near to impossible to find a developer, architect or a project man">
+<meta property="og:updated_time" content="2016-01-31T17:40:49.308Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="What Makes an Enterprise CMS?">
-<meta name="twitter:description" content="Recently I stumbled upon a website advertising an enterprise-grade CMS and Commerce suite written in node.js. I grew my interests in JavaScript after I was forced to implement a module performing the">
+<meta name="twitter:title" content="Test Delayed Development">
+<meta name="twitter:description" content="Test Driven Development is a commonly recognized term and probably the most acclaimed development practice out there. Nowadays, it is near to impossible to find a developer, architect or a project man">
     
     
         
@@ -180,13 +180,13 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            What Makes an Enterprise CMS?
+            Test Delayed Development
         </h1>
     
     <div class="post-meta">
-    <time itemprop="datePublished" content="Wed Jan 06 2016 14:25:15 GMT+0100">
+    <time itemprop="datePublished" content="Sun Jan 31 2016 18:08:02 GMT+0100">
 	
-		    Jan 06, 2016
+		    Jan 31, 2016
     	
     </time>
     
@@ -195,36 +195,34 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>Recently I stumbled upon a website advertising an enterprise-grade CMS and Commerce suite written in node.js. I grew my interests in JavaScript after I was forced to implement a module performing the same job on both client and server side. I thought having a JavaScript backend engine would really help me not to repeat myself. Well, it was not possible then, but I was looking ever since.</p>
-<p>I&#x2019;ve been looking for a good, stable and having a rich feature set node-based CMS for several months. After the development of <a href="http://buckets.io/" target="_blank" rel="external">bucket.io</a> has stalled and then been put on hold, I lost hope for finally seeing some mature solution, even a simple one as Buckets seemed to be. It&#x2019;s no wonder I got excited after seeing <a href="http://nodejsenterprise.com/" target="_blank" rel="external">NodeJS Enterprise</a> landing page.</p>
-<p>The website offers CMS and Commerce modules along with Docker manager tool. The CMS tool is in beta state, the rest is being developed, but nevertheless it looks promising. I focused on the CMS only due to the live demo available for previewing. Full of hopes I opened it and found following set of features:</p>
+            <p>Test Driven Development is a commonly recognized term and probably the most acclaimed development practice out there. Nowadays, it is near to impossible to find a developer, architect or a project manager not entirely convinced this paradigm is worth implementing. Or is it so?</p>
+<p>First, let me remind you what the arguments for TDD are:</p>
 <ul>
-<li>Simple user manager;</li>
-<li>Page editor with tree website structure view;</li>
-<li>Image library;</li>
-<li>Public assets manager;</li>
-<li>Online template and widget editor;</li>
-<li>Form editor.</li>
+<li>Having to implement tests, you will have to deeply understand what your code is supposed to do in the first place. Do not underestimate this opportunity.</li>
+<li>It will also force you to rethink your architecture and use at least some of the trustworthy design patters, e.g. Inversion of Control, before you start coding.</li>
+<li>You will be able to actually run and test your code without needing to integrate it with the rest of the application.</li>
+<li>Testing edge cases will give you a picture what potential security security and performance issues should be mitigated.</li>
+<li>Tests can be themselves the best user documentation you could ever write.</li>
+<li>You can safely refactor your code anytime &#x2013; thus you can also afford not to invest too much into its versatility until it&#x2019;s really needed.</li>
 </ul>
-<p>Even if it is not strictly a basic set, still it is not very impressive and definitely I wolud not use word &#x201C;enterprise&#x201D; to describe it yet. So what makes an enterprise CMS, then?</p>
-<h2 id="what-companies-need"><a href="#What_companies_need" class="headerlink" title="What companies need"></a>What companies need</h2><p>The most common setup for companies that are no longer family businesses is having multiple parties involved in producing content. It does not only mean individuals, i.e. multiple editors with different sets of access rights, but also whole company divisions with multiple editors working for each of them. It implies at least the following:  </p>
+<p>I have seen many projects where teams were dedicated to implement all kinds of automated tests before the project started and then dropped this idea shortly after the development commenced. I can understand some of the reasoning behind this:</p>
 <ul>
-<li>Content should have history. Each change should be tracked, every version should be restorable.</li>
-<li>The content should be searchable, thus tight integration with a scalable full-text search engine is a must-have.</li>
-<li>The platform should be able to host multiple sites, possibly utilizing different sets of templates and layouts but often sharing the same content.</li>
-<li>The editors&#x2019; responsibilities might vary across the organization and its divisions. The platform should allow for defining multiple roles and workflows. Someone enters content, someone translates, finally someone accepts it.</li>
-<li>Enterprise sites are multilingual. Organizations tend to commission translating content to third parties. Thus exporting and importing content is a desired feature.</li>
-<li>With large amount of content the ability to define page publication date and time is crucial. </li>
-<li>Large organizations use multiple systems. The CMS platform needs to be extensible and to exchange information with these systems. For example, integration with corporate Digital Asset Management solution enables the organization to implement asset usage policies.</li>
+<li>Implementing tests <em>is</em> time-consuming even if it will spare even more time in the future. Thus, it is hard to &#x201C;sell&#x201D; the idea to some uneducated clients.</li>
+<li>Under a tight schedule, with the upcoming deadlines, it is too easy to cut the corners and give up implementing tests (temporarily, of course).</li>
+<li>In some cases, implementing meaningful automated tests is very difficult, e.g. for thin-client web applications without much business logic.</li>
+<li>Implemented and then maintaining automated tests in general requires a lot of effort. Usually a lot more than implementing and maintaining the code being tested. It sounds daunting.</li>
+<li>Therefore, it is very tempting to disable failing tests or to implement &#x201C;dummy&#x201D; tests instead (they always pass without detecting real problems).</li>
 </ul>
-<p>and finally</p>
+<p>So, what you can do to help your teams keeping up the good quality and adhere to the best practices? Obviously, just committing to implementing test is not enough and will, in the worst case, lead to a slow-but-steady decay and eventually &#x2013; dropping them all together.</p>
+<p>I have a couple ideas on how to make this a sustainable process, to convert a chore into a habit. I hope you will implement them while working on your projects and then share, what the outcomes are.</p>
 <ul>
-<li>The corporate CMS solution has to allow different hosting and deployment scenarios to meet organization&#x2019;s security policies.</li>
-<li>It should allow deploying a web farm, loadbalancing.</li>
-<li>It should help promoting content from staging environments to production.</li>
-<li>It should separate Content Management from Content Delivery environments.</li>
+<li>Make unit tests, integration tests and UI tests parts of your Definition of Done. Consider them integral part of your development process. Code is not finished &#x2013; not <em>working</em> &#x2013; until it is not covered with enough number of tests (dummy tests do not count!) Let the other team member check tests written by their colleagues.</li>
+<li>Add the time needed to implement and maintain tests to your estimates. Adding them to the DoD will help you justifying your estimates.</li>
+<li>Maintain the tests whenever they require it. Do not ever disable tests only because they stared to fail. Fix the code and extend the test cases instead.</li>
+<li>Configure the automatic build environment and run all short-running tests after each commit. If some tests require more than 15 minutes to run, schedule them to a nighttime.</li>
+<li>Create reports from automated test runs and pass them to the management and clients on a regular basis. Advertise your concern over quality, it will help you defending your case.</li>
+<li>Educate your clients and management on every opportunity. Make <em>them</em> wanting you to deliver the tests as an inseparable part of the code you produce; implementing and maintaining the tests &#x2013; a necessary part of the production process.</li>
 </ul>
-<p><a href="http://nodejsenterprise.com/" target="_blank" rel="external">NodeJS Enterprise</a> is not there yet. It is, however, a very promising project. I will surely watch how it grows and becomes mature.</p>
 
             
                 
@@ -237,7 +235,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/cms/">cms</a> <a class="tag tag--primary tag--small t-link" href="/tags/node-js/">node.js</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/tdd/">tdd</a>
 
             </div>
         
@@ -246,7 +244,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/31/test-delayed-development/"  data-tooltip="Test Delayed Development">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -254,7 +252,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/12/28/simple-vagrantbbox-for-elasticsearch/" data-tooltip="Simple Vagrant Box for Elasticsearch">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/06/what-makes-an-enterprise-cms/" data-tooltip="What Makes an Enterprise CMS?">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -269,17 +267,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://malpaw.github.io/2016/01/31/test-delayed-development/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://malpaw.github.io/2016/01/31/test-delayed-development/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://malpaw.github.io/2016/01/31/test-delayed-development/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -327,7 +325,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/31/test-delayed-development/"  data-tooltip="Test Delayed Development">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -335,7 +333,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/12/28/simple-vagrantbbox-for-elasticsearch/" data-tooltip="Simple Vagrant Box for Elasticsearch">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/06/what-makes-an-enterprise-cms/" data-tooltip="What Makes an Enterprise CMS?">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -350,17 +348,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://malpaw.github.io/2016/01/31/test-delayed-development/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://malpaw.github.io/2016/01/31/test-delayed-development/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://malpaw.github.io/2016/01/31/test-delayed-development/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -386,17 +384,17 @@
                 <div id="share-options-bar" class="share-options-bar" data-behavior="3">
     <ul class="share-options">
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://malpaw.github.io/2016/01/31/test-delayed-development/">
                 <i class="fa fa-google-plus"></i><span class="">Share on Google Plus</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://malpaw.github.io/2016/01/31/test-delayed-development/">
                 <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://malpaw.github.io/2016/01/31/test-delayed-development/">
                 <i class="fa fa-twitter"></i><span>Share on Twitter</span>
             </a>
         </li>
@@ -451,9 +449,9 @@
     
         <script>
              var disqus_config = function () {
-                 this.page.url = 'http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/';
+                 this.page.url = 'http://malpaw.github.io/2016/01/31/test-delayed-development/';
                  
-                    this.page.identifier = '2016/01/06/what-makes-an-enterprise-cms/';
+                    this.page.identifier = '2016/01/31/test-delayed-development/';
                                   
              };
             (function() {
