@@ -3,11 +3,11 @@
 <html lang="en">
     
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="The Toolbox">
     <title>What Makes an Enterprise CMS? - The Toolbox</title>
-    <meta name="author" content="Paweł Malik">
+    <meta name="author" content="malpaw">
     
     
         <link rel="icon" href="http://malpaw.github.io/assets/images/favicon.png">
@@ -15,13 +15,16 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"malpaw","sameAs":[]},"articleBody":"Recently I stumbled upon a website advertising an enterprise-grade CMS and Commerce suite written in node.js. I grew my interests in JavaScript after I was forced to implement a module performing the same job on both client and server side. I thought having a JavaScript backend engine would really help me not to repeat myself. Well, it was not possible then, but I was looking ever since.\nI’ve been looking for a good, stable and having a rich feature set node-based CMS for several months. After the development of bucket.io has stalled and then been put on hold, I lost hope for finally seeing some mature solution, even a simple one as Buckets seemed to be. It’s no wonder I got excited after seeing NodeJS Enterprise landing page.\nThe website offers CMS and Commerce modules along with Docker manager tool. The CMS tool is in beta state, the rest is being developed, but nevertheless it looks promising. I focused on the CMS only due to the live demo available for previewing. Full of hopes I opened it and found following set of features:\n\nSimple user manager;\nPage editor with tree website structure view;\nImage library;\nPublic assets manager;\nOnline template and widget editor;\nForm editor.\n\nEven if it is not strictly a basic set, still it is not very impressive and definitely I wolud not use word “enterprise” to describe it yet. So what makes an enterprise CMS, then?\nWhat companies needThe most common setup for companies that are no longer family businesses is having multiple parties involved in producing content. It does not only mean individuals, i.e. multiple editors with different sets of access rights, but also whole company divisions with multiple editors working for each of them. It implies at least the following:  \n\nContent should have history. Each change should be tracked, every version should be restorable.\nThe content should be searchable, thus tight integration with a scalable full-text search engine is a must-have.\nThe platform should be able to host multiple sites, possibly utilizing different sets of templates and layouts but often sharing the same content.\nThe editors’ responsibilities might vary across the organization and its divisions. The platform should allow for defining multiple roles and workflows. Someone enters content, someone translates, finally someone accepts it.\nEnterprise sites are multilingual. Organizations tend to commission translating content to third parties. Thus exporting and importing content is a desired feature.\nWith large amount of content the ability to define page publication date and time is crucial. \nLarge organizations use multiple systems. The CMS platform needs to be extensible and to exchange information with these systems. For example, integration with corporate Digital Asset Management solution enables the organization to implement asset usage policies.\n\nand finally\n\nThe corporate CMS solution has to allow different hosting and deployment scenarios to meet organization’s security policies.\nIt should allow deploying a web farm, loadbalancing.\nIt should help promoting content from staging environments to production.\nIt should separate Content Management from Content Delivery environments.\n\nNodeJS Enterprise is not there yet. It is, however, a very promising project. I will surely watch how it grows and becomes mature.\n","dateCreated":"2016-01-06T14:25:15+01:00","dateModified":"2017-06-29T20:52:52+02:00","datePublished":"2016-01-06T14:25:15+01:00","description":"","headline":"What Makes an Enterprise CMS?","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/"},"publisher":{"@type":"Organization","name":"malpaw","sameAs":[]},"url":"http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/","keywords":"cms, node.js"}</script>
     <meta name="description" content="Recently I stumbled upon a website advertising an enterprise-grade CMS and Commerce suite written in node.js. I grew my interests in JavaScript after I was forced to implement a module performing the">
+<meta name="keywords" content="cms,node.js">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="What Makes an Enterprise CMS?">
 <meta property="og:url" content="http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/index.html">
 <meta property="og:site_name" content="The Toolbox">
 <meta property="og:description" content="Recently I stumbled upon a website advertising an enterprise-grade CMS and Commerce suite written in node.js. I grew my interests in JavaScript after I was forced to implement a module performing the">
-<meta property="og:updated_time" content="2016-01-06T16:00:03.769Z">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-06-29T18:52:52.498Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="What Makes an Enterprise CMS?">
 <meta name="twitter:description" content="Recently I stumbled upon a website advertising an enterprise-grade CMS and Commerce suite written in node.js. I grew my interests in JavaScript after I was forced to implement a module performing the">
@@ -30,25 +33,29 @@
         
     
     
-        <meta property="og:image" content="http://www.gravatar.com/avatar/bb17bbf5f43419da7dd8f4d372afa7a5?s=640"/>
+        <meta property="og:image" content="https://www.gravatar.com/avatar/bb17bbf5f43419da7dd8f4d372afa7a5?s=640"/>
     
     
     
     
     <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/style-svm7wryanfx4mnnbw13ooqldwkbctomi6jzw8zza1rnigr2shy7hezsa9ipi.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/all.css">
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/assets/css/thumbs.css">
+    <link rel="stylesheet" href="/assets/css/jquery.cookiebar.css">
+    <link rel="stylesheet" href="/assets/css/tranquilpeak.css">
     <!--STYLES END-->
     
     <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-72081146-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-72081146-1', 'auto');
+        ga('send', 'pageview');
     </script>
+
 
     
 </head>
@@ -62,18 +69,18 @@
         
     
 
-<header id="header" data-behavior="3">
+<header id="header" data-behavior="5">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
-    <h1 class="header-title">
+    <div class="header-title">
         <a class="header-title-link" href="/ ">The Toolbox</a>
-    </h1>
+    </div>
     
         
             <a  class="header-right-picture "
-                href="/#about">
+                href="#about">
         
         
-            <img class="header-picture" src="http://www.gravatar.com/avatar/bb17bbf5f43419da7dd8f4d372afa7a5?s=90"/>
+            <img class="header-picture" src="https://www.gravatar.com/avatar/bb17bbf5f43419da7dd8f4d372afa7a5?s=90" alt="Author&#39;s picture"/>
         
         </a>
     
@@ -84,119 +91,134 @@
 
     
 
-<nav id="sidebar" data-behavior="3">
-    
-        <div class="sidebar-profile">
-            <a href="/#about">
-                    <img class="sidebar-profile-picture" src="http://www.gravatar.com/avatar/bb17bbf5f43419da7dd8f4d372afa7a5?s=110"/>
-            </a>
-            <span class="sidebar-profile-name">Paweł Malik</span>
-        </div>
-    
-    
-        <ul class="sidebar-buttons">
+<nav id="sidebar" data-behavior="5">
+    <div class="sidebar-container">
         
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/ "
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-                    <span class="sidebar-button-desc">Home</span>
+            <div class="sidebar-profile">
+                <a href="/#about">
+                    <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/bb17bbf5f43419da7dd8f4d372afa7a5?s=110" alt="Author&#39;s picture"/>
                 </a>
-        </li>
+                <h4 class="sidebar-profile-name">malpaw</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>Former software architect and developer, currently playing God managing the poor devs. Open Source enthusiast with strong attraction towards <em>retro</em>, including gaming, computers and compact cassettes.<br>This is place is meant for storing solutions, thoughts, good ideas and even some of the bad ideas, too. A handy toolbox.</p>
+</h5>
+                
+            </div>
         
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/all-tags"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
-                    <span class="sidebar-button-desc">Tags</span>
-                </a>
-        </li>
         
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/all-archives"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
-                    <span class="sidebar-button-desc">Archives</span>
-                </a>
-        </li>
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/ "
+                            
+                            title="Home"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-home" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-tags"
+                            
+                            title="Tags"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-tags" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Tags</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-archives"
+                            
+                            title="Archives"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-archive" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Archives</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="#about"
+                            
+                            title="About"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-question" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">About</span>
+                    </a>
+            </li>
+            
+        </ul>
         
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/#about"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-                    <span class="sidebar-button-desc">About</span>
-                </a>
-        </li>
+            <ul class="sidebar-buttons">
+            
+        </ul>
         
-    </ul>
-    
-        <ul class="sidebar-buttons">
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/atom.xml"
+                            
+                            title="RSS"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-rss" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">RSS</span>
+                    </a>
+            </li>
+            
+        </ul>
         
-    </ul>
-    
-        <ul class="sidebar-buttons">
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/atom.xml"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
-                    <span class="sidebar-button-desc">RSS</span>
-                </a>
-        </li>
-        
-    </ul>
-    
+    </div>
 </nav>
 
             
-            <div id="main" data-behavior="3"
+            <div id="main" data-behavior="5"
                  class="
                         hasCoverMetaIn
                         ">
                 
-<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+<article class="post">
     
     
         <div class="post-header main-content-wrap text-left">
     
-        <h1 class="post-title" itemprop="headline">
+        <h1 class="post-title">
             What Makes an Enterprise CMS?
         </h1>
     
-    <div class="post-meta">
-    <time itemprop="datePublished" content="Wed Jan 06 2016 14:25:15 GMT+0100">
+    
+        <div class="post-meta">
+    <time datetime="2016-01-06T14:25:15+01:00">
 	
 		    Jan 06, 2016
     	
     </time>
     
 </div>
-</div>
+
     
-    <div class="post-content markdown" itemprop="articleBody">
+</div>
+
+    
+    <div class="post-content markdown">
         <div class="main-content-wrap">
             <p>Recently I stumbled upon a website advertising an enterprise-grade CMS and Commerce suite written in node.js. I grew my interests in JavaScript after I was forced to implement a module performing the same job on both client and server side. I thought having a JavaScript backend engine would really help me not to repeat myself. Well, it was not possible then, but I was looking ever since.</p>
-<p>I&#x2019;ve been looking for a good, stable and having a rich feature set node-based CMS for several months. After the development of <a href="http://buckets.io/" target="_blank" rel="external">bucket.io</a> has stalled and then been put on hold, I lost hope for finally seeing some mature solution, even a simple one as Buckets seemed to be. It&#x2019;s no wonder I got excited after seeing <a href="http://nodejsenterprise.com/" target="_blank" rel="external">NodeJS Enterprise</a> landing page.</p>
+<p>I’ve been looking for a good, stable and having a rich feature set node-based CMS for several months. After the development of <a href="http://buckets.io/" target="_blank" rel="noopener">bucket.io</a> has stalled and then been put on hold, I lost hope for finally seeing some mature solution, even a simple one as Buckets seemed to be. It’s no wonder I got excited after seeing <a href="http://nodejsenterprise.com/" target="_blank" rel="noopener">NodeJS Enterprise</a> landing page.</p>
 <p>The website offers CMS and Commerce modules along with Docker manager tool. The CMS tool is in beta state, the rest is being developed, but nevertheless it looks promising. I focused on the CMS only due to the live demo available for previewing. Full of hopes I opened it and found following set of features:</p>
 <ul>
 <li>Simple user manager;</li>
@@ -206,30 +228,28 @@
 <li>Online template and widget editor;</li>
 <li>Form editor.</li>
 </ul>
-<p>Even if it is not strictly a basic set, still it is not very impressive and definitely I wolud not use word &#x201C;enterprise&#x201D; to describe it yet. So what makes an enterprise CMS, then?</p>
-<h2 id="what-companies-need"><a href="#What_companies_need" class="headerlink" title="What companies need"></a>What companies need</h2><p>The most common setup for companies that are no longer family businesses is having multiple parties involved in producing content. It does not only mean individuals, i.e. multiple editors with different sets of access rights, but also whole company divisions with multiple editors working for each of them. It implies at least the following:  </p>
+<p>Even if it is not strictly a basic set, still it is not very impressive and definitely I wolud not use word “enterprise” to describe it yet. So what makes an enterprise CMS, then?</p>
+<h2><span id="what-companies-need">What companies need</span></h2><p>The most common setup for companies that are no longer family businesses is having multiple parties involved in producing content. It does not only mean individuals, i.e. multiple editors with different sets of access rights, but also whole company divisions with multiple editors working for each of them. It implies at least the following:  </p>
 <ul>
 <li>Content should have history. Each change should be tracked, every version should be restorable.</li>
 <li>The content should be searchable, thus tight integration with a scalable full-text search engine is a must-have.</li>
 <li>The platform should be able to host multiple sites, possibly utilizing different sets of templates and layouts but often sharing the same content.</li>
-<li>The editors&#x2019; responsibilities might vary across the organization and its divisions. The platform should allow for defining multiple roles and workflows. Someone enters content, someone translates, finally someone accepts it.</li>
+<li>The editors’ responsibilities might vary across the organization and its divisions. The platform should allow for defining multiple roles and workflows. Someone enters content, someone translates, finally someone accepts it.</li>
 <li>Enterprise sites are multilingual. Organizations tend to commission translating content to third parties. Thus exporting and importing content is a desired feature.</li>
 <li>With large amount of content the ability to define page publication date and time is crucial. </li>
 <li>Large organizations use multiple systems. The CMS platform needs to be extensible and to exchange information with these systems. For example, integration with corporate Digital Asset Management solution enables the organization to implement asset usage policies.</li>
 </ul>
 <p>and finally</p>
 <ul>
-<li>The corporate CMS solution has to allow different hosting and deployment scenarios to meet organization&#x2019;s security policies.</li>
+<li>The corporate CMS solution has to allow different hosting and deployment scenarios to meet organization’s security policies.</li>
 <li>It should allow deploying a web farm, loadbalancing.</li>
 <li>It should help promoting content from staging environments to production.</li>
 <li>It should separate Content Management from Content Delivery environments.</li>
 </ul>
-<p><a href="http://nodejsenterprise.com/" target="_blank" rel="external">NodeJS Enterprise</a> is not there yet. It is, however, a very promising project. I will surely watch how it grows and becomes mature.</p>
+<p><a href="http://nodejsenterprise.com/" target="_blank" rel="noopener">NodeJS Enterprise</a> is not there yet. It is, however, a very promising project. I will surely watch how it grows and becomes mature.</p>
 
             
-                
 
-            
         </div>
     </div>
     <div id="post-footer" class="post-footer main-content-wrap">
@@ -241,66 +261,82 @@
 
             </div>
         
-        <div class="post-actions-wrap">
+        
+            <div class="post-actions-wrap">
     <nav>
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/31/test-delayed-development/"  data-tooltip="Test Delayed Development">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/31/test-delayed-development/" data-tooltip="Test Delayed Development" aria-label="PREVIOUS: Test Delayed Development">
                 
-                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
                 </a>
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/12/28/simple-vagrantbbox-for-elasticsearch/" data-tooltip="Simple Vagrant Box for Elasticsearch">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/12/28/simple-vagrantbbox-for-elasticsearch/" data-tooltip="Simple Vagrant Box for Elasticsearch" aria-label="NEXT: Simple Vagrant Box for Elasticsearch">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
-                    <i class="fa fa-angle-right"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
     </nav>
     <ul class="post-actions post-action-share">
         <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
-                <i class="fa fa-google-plus"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
-                <i class="fa fa-facebook-official"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
-                <i class="fa fa-twitter"></i>
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
         </li>
         
-            <li class="post-action">
-                <a class="post-action-btn btn btn--default" href="#disqus_thread">
-                    <i class="fa fa-comment-o"></i>
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/" title="Share on Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
                 </a>
             </li>
         
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/" title="Share on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/" title="Share on Google+">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
+            
+        
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
             
-                <i class="fa fa-list"></i>
+                <i class="fa fa-list" aria-hidden="true"></i>
             </a>
         </li>
     </ul>
 </div>
 
 
+        
         
             
                 <div id="disqus_thread">
@@ -315,67 +351,81 @@
 
                 <footer id="footer" class="main-content-wrap">
     <span class="copyrights">
-        Copyrights &copy; 2016 Paweł Malik. All Rights Reserved.
+        Copyrights &copy; 2018 malpaw. All Rights Reserved.
     </span>
 </footer>
 
             </div>
             
-                <div id="bottom-bar" class="post-bottom-bar" data-behavior="3">
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
                     <div class="post-actions-wrap">
     <nav>
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/31/test-delayed-development/"  data-tooltip="Test Delayed Development">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/31/test-delayed-development/" data-tooltip="Test Delayed Development" aria-label="PREVIOUS: Test Delayed Development">
                 
-                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
                 </a>
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/12/28/simple-vagrantbbox-for-elasticsearch/" data-tooltip="Simple Vagrant Box for Elasticsearch">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/12/28/simple-vagrantbbox-for-elasticsearch/" data-tooltip="Simple Vagrant Box for Elasticsearch" aria-label="NEXT: Simple Vagrant Box for Elasticsearch">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
-                    <i class="fa fa-angle-right"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
     </nav>
     <ul class="post-actions post-action-share">
         <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
-                <i class="fa fa-google-plus"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
-                <i class="fa fa-facebook-official"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
-                <i class="fa fa-twitter"></i>
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
         </li>
         
-            <li class="post-action">
-                <a class="post-action-btn btn btn--default" href="#disqus_thread">
-                    <i class="fa fa-comment-o"></i>
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/" title="Share on Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
                 </a>
             </li>
         
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/" title="Share on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/" title="Share on Google+">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
+            
+        
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
             
-                <i class="fa fa-list"></i>
+                <i class="fa fa-list" aria-hidden="true"></i>
             </a>
         </li>
     </ul>
@@ -383,26 +433,37 @@
 
 
                 </div>
-                <div id="share-options-bar" class="share-options-bar" data-behavior="3">
+                <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+    <i id="btn-close-shareoptions" class="fa fa-times"></i>
     <ul class="share-options">
-        <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
-                <i class="fa fa-google-plus"></i><span class="">Share on Google Plus</span>
-            </a>
-        </li>
-        <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
-                <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
-            </a>
-        </li>
-        <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
-                <i class="fa fa-twitter"></i><span>Share on Twitter</span>
-            </a>
-        </li>
+        
+            
+            
+            <li class="share-option">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
+                    <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="share-option">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
+                    <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="share-option">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
+                </a>
+            </li>
+        
     </ul>
 </div>
-<div id="share-options-mask" class="share-options-mask"></div>
+
             
         </div>
         
@@ -413,39 +474,43 @@
 <div id="about">
     <div id="about-card">
         <div id="about-btn-close">
-            <i class="fa fa-remove"></i>
+            <i class="fa fa-times"></i>
         </div>
         
-            <img id="about-card-picture" src="http://www.gravatar.com/avatar/bb17bbf5f43419da7dd8f4d372afa7a5?s=110"/>
+            <img id="about-card-picture" src="https://www.gravatar.com/avatar/bb17bbf5f43419da7dd8f4d372afa7a5?s=110" alt="Author&#39;s picture"/>
         
-            <h4 id="about-card-name">Paweł Malik</h4>
+            <h4 id="about-card-name">malpaw</h4>
         
-            <h5 id="about-card-bio"><p>Software architect, developer and Open Source enthusiast, using propertiary technologies at work, yet trying to smuggle some of the fresh air in.<br>This is place is for storing solutions, thoughts, good ideas (and even some of the bad ideas, too). A toolbox.</p>
-</h5>
+            <div id="about-card-bio"><p>Former software architect and developer, currently playing God managing the poor devs. Open Source enthusiast with strong attraction towards <em>retro</em>, including gaming, computers and compact cassettes.<br>This is place is meant for storing solutions, thoughts, good ideas and even some of the bad ideas, too. A handy toolbox.</p>
+</div>
         
         
-            <h5 id="about-card-job">
+            <div id="about-card-job">
                 <i class="fa fa-briefcase"></i>
                 <br/>
-                <p><a href='https://www.linkedin.com/in/pawelmalik' target='_blank'>LinkedIn</a></p>
+                <p>9 to 5</p>
 
-            </h5>
+            </div>
         
         
-            <h5 id="about-card-location">
-                <i class="fa fa-map-marker"></i>
+            <div id="about-card-location">
+                <i class="fa fa-map-marker-alt"></i>
                 <br/>
                 Poland
-            </h5>
+            </div>
         
     </div>
 </div>
 
         
+        
 <div id="cover" style="background-image:url('/assets/images/toolbox.jpg');"></div>
-    </body>
-    <!--SCRIPTS-->
-<script src="/assets/js/scrip-j3aptm1ci1vckfdxxhhd4fn7awtkjt2pd47jjbkgvn0cqy9exfkfdvhtw9fu.min.js" type="text/javascript"></script>
+        <!--SCRIPTS-->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/jquery.fancybox.js"></script>
+<script src="/assets/js/thumbs.js"></script>
+<script src="/assets/js/jquery.cookiebar.js"></script>
+<script src="/assets/js/tranquilpeak.js"></script>
 <!--SCRIPTS END-->
 
     
@@ -454,7 +519,7 @@
                  this.page.url = 'http://malpaw.github.io/2016/01/06/what-makes-an-enterprise-cms/';
                  
                     this.page.identifier = '2016/01/06/what-makes-an-enterprise-cms/';
-                                  
+                 
              };
             (function() {
                 var d = document, s = d.createElement('script');
@@ -469,4 +534,5 @@
 
 
 
+    </body>
 </html>
